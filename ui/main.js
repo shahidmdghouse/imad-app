@@ -18,12 +18,16 @@ function moveRight(){
     img.style.marginLeft = marginLeft + 'px' ; 
     
     if(marginLeft > 100){
-        //marginLeft = 0;
-        marginRight = marginRight + 1;
-        img.style.marginRight = marginRight + 'px' ;
-        
+        moveLeft();
     }
 }
+
+function moveLeft(){
+    marginRight = marginRight + 1;
+    img.style.marginRight = marginRight + 'px' ;
+    
+}
+
 
 
 img.onclick = function(){
