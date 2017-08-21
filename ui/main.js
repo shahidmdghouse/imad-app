@@ -11,11 +11,15 @@ element.innerHTML = 'this is changed text, a change made by javascript.';
 
 var img = document.getElementById('madi');
 var marginLeft = 0;
-var marginRight = 0;
+
 
 function moveRight(){
     marginLeft = marginLeft + 1;
     img.style.marginLeft = marginLeft + 'px' ; 
+    
+    if(marginLeft == 100){
+        marginLeft = -100 ;
+    }
 }
 
 img.onclick = function(){
