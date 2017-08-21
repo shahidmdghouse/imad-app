@@ -10,6 +10,7 @@ element.innerHTML = 'this is changed text, a change made by javascript.';
 //move the image
 
 var img = document.getElementById('madi');
+var marginLeft = 0;
 
 function moveRight(){
     marginLeft = marginLeft + 10;
