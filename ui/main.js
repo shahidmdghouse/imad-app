@@ -23,8 +23,12 @@ function moveRight(){
 }
 
 function moveLeft(){
-    marginRight = marginRight + 1;
-    img.style.marginRight = marginRight + 'px' ;
+    
+    while( marginRight != 100 ){
+        marginRight = marginRight + 1;
+        img.style.marginRight = marginRight + 'px' ;
+    }
+    
 }
 
 
