@@ -18,17 +18,13 @@ function moveRight(){
     img.style.marginLeft = marginLeft + 'px' ; 
     
     if(marginLeft == 100){
-        moveLeft();
+    var interval = setInterval(moveLeft, 50);
     }
 }
 
 function moveLeft(){
-    
-    while( marginRight != 100 ){
-        marginRight = marginRight + 5;
+        marginRight = marginRight + 1;
         img.style.marginRight = marginRight + 'px' ;
-    }
-    
 }
 
 
